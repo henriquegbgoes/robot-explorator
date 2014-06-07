@@ -1,0 +1,26 @@
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.3" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+               xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.3
+                                   http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.3.xsd">
+    
+    <url-mapping id="login"> 
+        <pattern value="/" /> 
+        <view-id value="/public/login.xhtml" />
+    </url-mapping>
+    
+    <url-mapping id="inicio"> 
+        <pattern value="/inicio" /> 
+        <view-id value="/restrict/index.html" />
+    </url-mapping>
+    
+    <url-mapping id="home"> 
+        <pattern value="/home" /> 
+        <view-id value="/restrict/index.xhtml" />
+    </url-mapping>
+    
+    
+    <url-mapping id="erro"> 
+        <pattern value="/erro" /> 
+        <view-id value="/restrict/erro.xhtml" />
+    </url-mapping>
+</pretty-config>

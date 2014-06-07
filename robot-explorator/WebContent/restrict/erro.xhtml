@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<meta http-equiv="restrict-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="resources/css/formatacao.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/colunas.css" />
+	<script type="text/javascript" src="resources/javascript/funcoes.js" />
+	<title><h:outputText value="#{msg.text_empresa}" /></title>
+</h:head>
+
+<h:body styleClass="body-layout">
+
+	<div class="div-estica-pagina">
+		<table border="0" width="1006" bgcolor="white" align="center" style="height: 99%;">
+
+			<!-- LOGO SYS AEREO -->
+			<tr>
+				<td valign="top" align="center">
+					<p:graphicImage value="/resources/images/layout/header.jpg" style="margin-bottom: -4px;"/>
+					<p:separator />
+				</td>
+			</tr>
+
+			<!-- TITULO DA PAGINA -->
+			<tr>
+				<td width="100%" valign="top">
+					<h:panelGrid columns="2" style="width: 99%;">
+						<h:panelGroup styleClass="titulo-pagina">
+							<h:outputText value="#{msg.title_erro}"/>
+						</h:panelGroup>						
+					</h:panelGrid>
+				
+					<p:separator />
+				</td>
+			</tr>
+
+			<!-- CONTEUDO DA PAGINA -->
+			<tr style="height: 100%;">
+				<td valign="top">
+					<h:form id="formErro">
+						<h:panelGrid width="100%">
+						
+							<p:fieldset styleClass="fieldset">
+								<h:panelGrid columns="2" columnClasses="coluna-75, coluna-25">
+									<h:panelGroup>
+										<h:panelGrid columns="2">
+											<p:graphicImage value="/resources/images/icons/erro.png"/>
+											<h:outputLabel value="#{msg.text_ocorreu_um_erro}" styleClass="texto-erro"/>
+										</h:panelGrid>
+										<p:spacer height="5"/>
+										
+										<p:fieldset>
+											<h:outputText value="#{msg.title_erro}: " style="font-weight: bold;"/>
+											<h:outputText value="#{requestScope['javax.servlet.error.message']}"/>
+										</p:fieldset>
+										
+										<p:commandButton value="#{msg.btn_voltar}" immediate="true" type="button"
+											onclick="history.back();" style="margin-top: 20px;" 
+											icon="ui-icon-arrowrefresh-1-n"/>
+									</h:panelGroup>
+									
+									<p:graphicImage value="/resources/images/layout/img_erro.jpg" 
+										style="margin-left: 40px; margin-bottom: 5px;"/>
+								</h:panelGrid>
+							</p:fieldset>
+							
+						</h:panelGrid>
+					</h:form>
+				</td>
+			</tr>
+
+			<!-- RODAPE -->
+			<tr>
+				<td valign="top" align="center" class="rodape">
+					<p:separator />
+					<h:outputText value="#{msg.text_rodape}" styleClass="texto-rodape" />
+					<br /><br />
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</h:body>
+</html>

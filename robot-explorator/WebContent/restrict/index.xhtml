@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<meta http-equiv="restrict-type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="resources/css/layout.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="resources/images/icons/robot_icon.ico" />
+	<title><h:outputText value="#{msg.title_home}"/></title>
+</h:head>
+
+<h:body styleClass="body">
+
+	<table width="100%"> 
+		<tr style="height:10%">
+			<td colspan="2">
+				<h:panelGrid styleClass="logo-inicio">
+					<h:outputLabel styleClass="label-titulo" value="#{msg.title_logotipo}" />
+				</h:panelGrid>
+			</td>
+		</tr>
+		<tr style="height:90%">
+			<td style="width:30%" valign="top">
+				<h:panelGrid>
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="POSICAO X:" />
+						<h:outputLabel styleClass="label-valor-variavel-ok" value="234.0" />
+					</h:panelGroup>
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="POSICAO Y:" />
+						<h:outputLabel styleClass="label-valor-variavel-alert" value="234.0" />
+					</h:panelGroup>
+					
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="CAMERA STATUS:" />
+						<h:outputLabel styleClass="label-valor-variavel-ok" value="OK" />
+					</h:panelGroup>
+					
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="LED STATUS:" />
+						<h:outputLabel styleClass="label-valor-variavel-alert" value="OK" />
+					</h:panelGroup>
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="LUMINOSIDADE:" />
+						<h:outputLabel styleClass="label-valor-variavel-ok" value="ALTA" />
+					</h:panelGroup>
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="INCLINACAO X:" />
+						<h:outputLabel styleClass="label-valor-variavel-alert" value="234.0" />
+					</h:panelGroup>
+					
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="INCLINACAO Y:" />
+						<h:outputLabel styleClass="label-valor-variavel-ok" value="234.0" />
+					</h:panelGroup>
+					
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="ACELERACAO X:" />
+						<h:outputLabel styleClass="label-valor-variavel-alert" value="234.0" />
+					</h:panelGroup>
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="VELOCIDADE ATUAL:" />
+						<h:outputLabel styleClass="label-valor-variavel-ok" value="234.0" />
+					</h:panelGroup>
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="ANGULO DE ROTACAO:" />
+						<h:outputLabel styleClass="label-valor-variavel-alert" value="234.0" />
+					</h:panelGroup>
+					
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="DISTANCIA ULTRASSONICO:" />
+						<h:outputLabel styleClass="label-valor-variavel-ok" value="234.0" />
+					</h:panelGroup>
+					
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="ANGULO CABECA X:" />
+						<h:outputLabel styleClass="label-valor-variavel-alert" value="234.0" />
+					</h:panelGroup>
+					<h:panelGroup>
+						<h:outputLabel styleClass="label-titulo-variavel" value="ANGULO CABECA Y:" />
+						<h:outputLabel styleClass="label-valor-variavel-ok" value="234.0" />
+					</h:panelGroup>
+				</h:panelGrid>
+			</td>
+			<td style="width:70%">
+				<h:graphicImage url="/resources/images/layout/img-mapa.png" style="margin-bottom:100px;"/>
+		 		<p:focus for="terminal" />
+			    <p:terminal id="terminal" widgetVar="term" commandHandler="#{terminalView.handleCommand}"
+			         prompt="#{terminalView.prompt}" styleClass="prompt" style="height:170px;"> 
+			    </p:terminal>
+			</td>
+		</tr>
+	
+	</table>
+	
+</h:body>
+</html>

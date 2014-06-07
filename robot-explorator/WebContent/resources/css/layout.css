@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+.position-prompt-login{
+	width: 700px;
+	height: 300px;
+	position: relative;
+	left:50%;
+	margin-left: -350px;
+	margin-top: 150px;
+}`
+
+.position-prompt-home{
+	width:100%;
+	height:200px;
+	float: none;
+}
+
+.prompt{
+	font-family: Courier New,Consolas,Miriam Fixed,Lucida Console;
+}
+
+.style-title-login {
+	width: 700px;
+	height: 100px;
+	color:#32e724; 
+	font-family: Courier New,Consolas,Miriam Fixed,Lucida Console;
+	font-size:1em;
+}
+
+.body{
+	position:absolute;
+	width:98%;
+	height:96%;
+	background-color:#000;
+	border-style: dashed;
+	border-color: #32e724; 
+}
+
+.logo-inicio{
+	width:98%;
+	height: 50px;
+	border-bottom-style: dashed;
+	margin-left: 10px;
+}
+
+.label-titulo{
+	color:#FFF;
+	font-family: Courier New,Consolas,Miriam Fixed,Lucida Console;
+	font-size:1.6em;
+}
+
+.label-titulo-variavel{
+	color:#32e724;
+	font-family: Courier New,Consolas,Miriam Fixed,Lucida Console;
+	font-size:1.2em;
+	margin-left: 10px;
+}
+
+.label-valor-variavel-ok{
+	color:#A4D3EE;
+	font-family: Courier New,Consolas,Miriam Fixed,Lucida Console;
+	font-size:1.2em;
+	margin-left: 10px;
+}
+
+.label-valor-variavel-alert{
+	color:#EE2C2C;
+	font-family: Courier New,Consolas,Miriam Fixed,Lucida Console;
+	font-size:1.2em;
+	margin-left: 10px;
+}
+
+.coluna-25{
+	position:relative;
+	width: 25%;
+	height:96%;
+	padding-right: 10px;
+}
+
+.coluna-75{
+	position:relative;
+	width: 75%;
+	height:96%;
+	padding-right: 10px;
+}
