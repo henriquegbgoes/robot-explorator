@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>20</x>
+      <y>10</y>
+      <w>650</w>
+      <h>490</h>
+    </coordinates>
+    <panel_attributes>Application Java
+--
+
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Package</type>
+    <coordinates>
+      <x>720</x>
+      <y>220</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Application C
+--
+-Content 1
++Content 2
+bg=gray
+fg=red</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>480</x>
+      <y>70</y>
+      <w>170</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>TerminalLogin
+
+--
+handleCommandLogin()
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>50</x>
+      <y>50</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>comandosEnum
+--
+INICIAR_MAPEAMENTO
+PAUSAR_MAPEAMENTO
+PROSSEGUIR_MAPEAMENTO
+ABORTAR_MAPEAMENTO
+DESLOCAR
+ROTACIONAR
+EXIBIR_PARAMETROS
+--
+getEnumByCommand()
+getMethodByCommand()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>480</x>
+      <y>320</y>
+      <w>150</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>TerminalHome
+
+--
+handleCommand()
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>60</x>
+      <y>320</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>robot
+--
+double positioX
+double positioY
+boolean statusLed
+double luminosidadeLed
+
+--
+getters and setters</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>230</x>
+      <y>80</y>
+      <w>270</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0
+m2=1
+</panel_attributes>
+    <additional_attributes>30;30;250;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>80</y>
+      <w>260</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0
+m2=1
+</panel_attributes>
+    <additional_attributes>30;300;240;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>230</x>
+      <y>80</y>
+      <w>270</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0
+m2=1</panel_attributes>
+    <additional_attributes>30;30;250;300</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>240</x>
+      <y>350</y>
+      <w>260</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0
+m2=1
+</panel_attributes>
+    <additional_attributes>30;30;240;30</additional_attributes>
+  </element>
+</diagram>
